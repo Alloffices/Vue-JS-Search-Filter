@@ -1,0 +1,9 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<div id="app" class="container">
+  <h1>{{ titleName }}</h1>
+  <input v-model="findArtist" type="text" placeholder="Search for..."/>
+  <h3 id="mount">There are {{names.length}} artists in our database</h3>
+  <li>
+      <li v-for="name in filteredArtists">{{ name }}</li>
+  </li>
+</div>
